@@ -8,6 +8,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import { Open_Sans } from 'next/font/google'
 import Footer from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,10 +17,16 @@ export const metadata: Metadata = {
   title: 'Gikonyo Kimani',
   description: 'This is my personal portfolio, follow me @dgikonyo in Githb...happy ctrl+c -> ctrl+v',
 }
+  
+//👇 Configure our font object
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function RootLayout({ children, }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={openSans.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>

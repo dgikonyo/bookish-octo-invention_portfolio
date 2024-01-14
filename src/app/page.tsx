@@ -4,6 +4,9 @@ import styles from "../../public/assets/css/page.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useRef, useState, useEffect } from "react";
+
+//add countdown timer to uploading next project
 
 export default function Home() {
   return (
@@ -82,8 +85,11 @@ export default function Home() {
         </div>
 
         {/* Projects */}
-        <div>
-          <div></div>
+        <div className="project">
+          <div>
+            <h3>Projects</h3>
+            <p><i>This section will be updated in </i></p>
+          </div>
         </div>
       </div>
     </main>

@@ -13,7 +13,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className="container">
         <div className="row mt-5">
-          <h1 className="col-lg-6 col-sm-6 text-start">Hujambo,</h1>
+          <h1 className="col-sm-12 text-start">Hujambo,</h1>
         </div>
         {/* introduce your self */}
         <div className="row">
@@ -26,21 +26,16 @@ export default function Home() {
               </div>
               <div className="description">
                 <p>
-                  I am a Software Developer based ni Nairobi, Kenya. I
+                  I am a software developer based in Nairobi, Kenya. I
                   specialize in backend development and my key focus is on
                   building products that will disrupt the technology markets in
                   Africa.
                 </p>
                 <p>
-                  {" "}
-                  I am currently building <Link href="">
-                    Jirani Crowdfund
-                  </Link>{" "}
-                  to enable startups and creatives to get funding for their
-                  projects.
+                  I am currently building <Link href="">Jirani Crowdfund.</Link>
                 </p>
                 <p>
-                  Most of my projects can be found in in my{" "}
+                  Most of my projects can be found in my{" "}
                   <Link className="links" href="https://github.com/dgikonyo">
                     GitHub
                   </Link>{" "}

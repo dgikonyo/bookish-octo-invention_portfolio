@@ -4,8 +4,6 @@
 }
 
 .main {
-  // max-width: 1080px;
-  // margin: 0 auto !important;
   padding: 5vh 10vw;
   padding-top: 5vh;
   padding-right: 10vw;
@@ -67,4 +65,29 @@
   background-size: 20px 20px;
   background-repeat: repeat;
   height: 20px;
+}
+
+/* Small devices */
+@media only screen and (max-width: 600px) {
+  .main {
+    h1 {
+      font-size: 3.5em;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 1.6em;
+      line-height: 1.4;
+      max-width: 28em;
+    }
+
+    p {
+      font-size: 1.2em;
+      font-weight: 350;
+      line-height: 1.2;
+      max-width: 28em;
+    }
+  }
 }

@@ -8,18 +8,7 @@ export default function Footer() {
         <section className={styles.footer}>
             <footer className="row py-3">
                 <div className="col-md-12 col-xs-12">
-                    <p className="text-center text-body-secondary">
-                        Made with love from{" "}
-                        <span>
-                            <FontAwesomeIcon
-                                icon={faEarthAfrica}
-                                style={{ color: "#636365" }}
-                            />
-                        </span>
-                    </p>
-                </div>
-                <div className="col-md-12 col-xs-12">
-                    <p className="text-center text-body-secondary">
+                    <p className="text-start text-body-secondary">
                         © 2023 <Link href="https://choroastudios.vercel.app/">Choroa Design Studios</Link>
                     </p>
                 </div>

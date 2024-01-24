@@ -4,7 +4,7 @@ import styles from "../../public/assets/css/page.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { useRef, useState, useEffect } from "react";
+import Footer from "../app/components/Footer";
 
 //add countdown timer to uploading next project
 
@@ -12,85 +12,59 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className="container">
-        <div className="row">
-          <h1 className="col text-center heading_text">Gikonyo Kimani</h1>
-        </div>
-        {/* links */}
-        <div className="row mb-5">
-          <div className="col text-end" id="links">
-            <Link
-              href="https://www.linkedin.com/in/gikonyo-kimani-05328211b/"
-              className="nav-link px-2 text-body-secondary"
-            >
-              <span>
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  style={{ color: "#636365" }}
-                  size="2xl"
-                  shake
-                />
-              </span>
-            </Link>
-          </div>
-
-          <div className="col text-start" id="links">
-            <Link
-              href="https://github.com/dgikonyo"
-              className="nav-link px-2 text-body-secondary"
-            >
-              <span>
-                <FontAwesomeIcon
-                  icon={faGithub}
-                  style={{ color: "#636365" }}
-                  size="2xl"
-                  spinPulse
-                />
-              </span>
-            </Link>
-          </div>
+        <div className="row mt-5">
+          <h1 className="col-lg-6 col-sm-6 text-start">Hujambo,</h1>
         </div>
         {/* introduce your self */}
         <div className="row">
           <div className="col-lg-6 col-sm-12">
             <div className="about-detail">
-              <div className="about-header">
-                <h2><b>About Me</b></h2>
+              <div className="fullname">
+                <h2>
+                  My name is <b> Gikonyo Kimani</b>
+                </h2>
               </div>
               <div className="description">
-                <p>I am a Software Engineer based ni Nairobi, Kenya. I specialize in backend development and my key focus is on building products ontop of AI.
-
-                  I am currently building <Link href="">Jirani Crowdfund</Link> to create awareness for and assist startups and creatives to get funding from their projects.
+                <p>
+                  I am a Software Developer based ni Nairobi, Kenya. I
+                  specialize in backend development and my key focus is on
+                  building products that will disrupt the technology markets in
+                  Africa.
+                </p>
+                <p>
+                  {" "}
+                  I am currently building <Link href="">
+                    Jirani Crowdfund
+                  </Link>{" "}
+                  to enable startups and creatives to get funding for their
+                  projects.
+                </p>
+                <p>
+                  Most of my projects can be found in in my{" "}
+                  <Link className="links" href="https://github.com/dgikonyo">
+                    GitHub
+                  </Link>{" "}
+                  page. This is my{" "}
+                  <Link
+                    className="links"
+                    href="https://www.linkedin.com/in/gikonyo-kimani-05328211b/"
+                  >
+                    LinkedIn
+                  </Link>{" "}
+                  page if you would want to connect and view my past work
+                  experiences.
                 </p>
               </div>
               <div>
-                <p>Outside work I like engaging in FPS games, community projects and taking care of my dog...I'm looking for hobbies though!</p>
+                <p>
+                  Outside work I like engaging in FPS games, community projects
+                  and creating paracords!
+                </p>
               </div>
             </div>
           </div>
-
-          <div className="col-lg-6 col-sm-12">
-            <div className="location-detail">
-              <div className="items">
-                <h3 className='about-location'><b>Location</b></h3>
-                {/* add Kenyan logo */}
-                <p>Nairobi, Kenya</p>
-              </div>
-              <div id="items">
-                <h3 id="about_item"><b>Email</b></h3>
-                <p id="description">kd.gikonyo@gmail.com</p>
-              </div>
-            </div>
-          </div>
-
         </div>
-
-        {/* Projects */}
-        <div className="project">
-          <div>
-            <h3>Projects</h3>
-            <p><i>This section will be updated in </i></p>
-          </div>
-        </div>
+        <Footer />
       </div>
     </main>
   );

@@ -32,9 +32,9 @@ export default function Home() {
                   Africa.
                 </p>
                 <p>
-                  I am currently building projects in Machine Learning and
-                  finance. Some of the projects I have done can be found in my
-                  github link attached below.
+                  I am currently building projects in Machine Learning. Some of
+                  the projects I have done can be found in my github link
+                  attached below.
                 </p>
                 <p>
                   Most of my projects can be found in my{" "}
